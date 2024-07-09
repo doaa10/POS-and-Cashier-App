@@ -28,7 +28,14 @@
     font-family: 'Montserrat', sans-serif;
     color: var(--txt-color);
     background: var(--bc-color);
+    
   }
+  html,
+  body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
   
   a {
     color: inherit;
@@ -38,3 +45,19 @@
   li {
     list-style: none;
   }
+
+  .mainStructure{
+    display: flex;
+    width: 100%;
+  }
+  .sideDrawer{
+    display: flex;
+    min-height: 100vh;
+    width: 11.11%;
+    
+  }
+
+  .content {
+    width: 100%;
+  }
+  
