@@ -1,0 +1,39 @@
+/* .input {
+    display: flex;
+    flex-direction: column;
+
+    .input__label {
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .input__field {
+        padding: 7px 0px;
+        background-color: transparent;
+        font-size: 1rem;
+        border: 1px solid transparent;
+        border-bottom: 1px solid var(--line-solor);
+        outline: none;
+
+        @media(max-width:1000px) {
+            width: 90%;
+        }
+    }
+
+    .input__field:focus {
+        border-bottom: 1px solid rgb(100, 140, 48);
+
+    }
+} */
+.search{
+    width: 100%;
+}
+.search input{
+    display: flex;
+    background-color: transparent;    
+    border: none;
+    outline: none;
+
+    
+}
