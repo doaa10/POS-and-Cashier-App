@@ -19,7 +19,7 @@
 .popular {
     background-color: var(--main-color);
     color: var(--txt-color);
-    border-radius: 20px;
+    border-radius: 15px;
     font-size: 16px;
 }
 
@@ -36,11 +36,11 @@
 }
 
 .small {
-    padding: 8px 2rem;
+    padding: 7px 2rem;
 }
 
 .mediam {
-    padding: 15px 12rem;
+    padding: 10px 7rem;
 }
 
 .meduim {
@@ -56,7 +56,7 @@
 }
 
 .mediam:hover {
-    padding: 15px 14rem;
+    padding: 10px 7.5rem;
 }
 
 .large:hover {
