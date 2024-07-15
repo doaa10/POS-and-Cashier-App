@@ -11,6 +11,7 @@
     --main-txt:18px;
     --big-txt:28px;
     --large-txt:24px;
+    --medium2-txt:22px;
     --meduim-txt :20px;
     --avg-txt:16px;
     --small1-txt:14px;
@@ -53,11 +54,21 @@
   .sideDrawer{
     display: flex;
     min-height: 100vh;
-    width: 11.11%;
+    width: 8%;
     
   }
 
   .content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .topbar{
+    flex: 1;
+  }
+  .childern{
+    flex: 4;
   }
   

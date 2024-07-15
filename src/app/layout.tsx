@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavSideDrawer from "@/Components/Large/NavSideDrawer/NavSideDrawer";
 import TopBar from "@/Components/Large/TopBar/TopBar";
-import Menu from "./(DataView)/Menu/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +27,9 @@ export default function RootLayout({
             <div className="topbar">
               <TopBar/>
             </div>
-            {children}
+            <div className="children">
+                {children}
+            </div>
           </div>
         </div>
         </body>

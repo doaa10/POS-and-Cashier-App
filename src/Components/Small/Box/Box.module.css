@@ -1,6 +1,6 @@
 .box{
     width:7% ;
-    background-color: #F5F5F5;
+    background-color: var(--sec-txt-color);
     height: 4%;
     display: flex;
     align-items: center;
@@ -13,11 +13,17 @@
 
 }
 .box span{
-    font-size: 15px;
-    color: #000000;
+    font-size: var(--small1-txt);
+    color: var(--txt-color);
 
 }
 .box:hover{
     background-color: #d3d3d3;
 
+}
+.active{
+    background-color: var(--main-color);
+}
+.active:hover{
+    background-color:#f5b921 ;
 }

@@ -1,0 +1,74 @@
+.button {
+    font-size: 2rem;
+    border: 0;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+    color: var(--txt-color);
+    align-items: center;
+
+}
+.secondary{
+    background-color: none;
+    color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 16px;
+}
+.popular {
+    background-color: var(--main-color);
+    color: var(--txt-color);
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.primary {
+    background-color: navy;
+}
+
+.danger {
+    background-color: red;
+}
+
+.success {
+    background-color: green;
+}
+
+.small {
+    padding: 8px 2rem;
+}
+
+.mediam {
+    padding: 15px 12rem;
+}
+
+.meduim {
+    padding: 14px 24px;
+}
+
+.large {
+    padding: 15px 25rem;
+}
+
+.small:hover {
+    padding: 8px 3rem;
+}
+
+.mediam:hover {
+    padding: 15px 14rem;
+}
+
+.large:hover {
+    padding: 15px 28rem;
+}
+
+.full {
+    width: 90%;
+    padding: 15px 14rem;
+
+}
+
+.full:hover {
+    width: 100%;
+}

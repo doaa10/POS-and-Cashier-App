@@ -3,7 +3,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    border-right: 2px solid #F5F5F5;
+    border-right: 2px solid var(--sec-txt-color);
     position: relative;
     align-items: center;
     align-content: center;
@@ -17,6 +17,8 @@
         align-items: center;
         align-content: center;
         justify-content: space-between;
+        position: fixed;
+
 
         .NavSideDrawer_Container_TopLogo{
             flex: 1;
@@ -28,16 +30,16 @@
 
 
             .NavSideDrawer_Container_TopLogo_Title{
-                color: #000;
+                color:var(--txt-color);
                 text-align: center;
-                font-size: 22px;
+                font-size: var(--medium2-txt);
                 font-weight: 700;
                 text-transform: uppercase;
 
                
             }
             .NavSideDrawer_Container_TopLogo_Title .special{
-                color: #C8161D;
+                color: var(--s-color);
             }
             
         }
@@ -66,8 +68,8 @@
  
 }
 .LinksContainer .other li {
-    color: #ACAAAA;
+    color: var(--container-color);
 }
 .LinksContainer .activeLink  {
-    color: #C8161D;
+    color: var(--s-color);
 }

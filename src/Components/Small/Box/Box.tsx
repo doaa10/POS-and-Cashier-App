@@ -8,8 +8,9 @@ interface props {
 }
 
 const Box: React.FC<props>  = ({categoryName,categoryColor}) => {
+
   return (
-    <div className={styles.box}>
+    <div className={`${styles.box} ${categoryColor === 'Active' ? styles.active : ''}`}>
         <span>{categoryName}</span>
     </div>
   )
