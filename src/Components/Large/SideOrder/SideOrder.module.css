@@ -12,7 +12,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .sideOrder_container_head{
@@ -31,7 +31,17 @@
     font-size: var(--big-txt);
     font-weight: 500;
 }
+.sideOrder_container_orders{
+    width: 100%;
+    background-color:var(--sec-txt-color) ;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
+
+}
 .sideOrder_container_payment{
     width: 100%;
     display: flex;
@@ -72,4 +82,9 @@
     background-color:var(--sec-txt-color) ;
     padding: 10px 30px;
     border-radius: 15px;
+}
+
+.sideOrder_container_button>*:hover{
+    opacity: .8;
+
 }

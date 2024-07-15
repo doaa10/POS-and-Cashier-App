@@ -4,6 +4,7 @@ import { RiVisaFill } from "react-icons/ri";
 import { IoCashOutline } from "react-icons/io5";
 import { BsQrCodeScan } from "react-icons/bs";
 import Button from '@/Components/Small/Button/Button';
+import OrderContainer from '@/Components/Small/OrderContainer/OrderContainer';
 
 const SideOrder = () => {
   return (
@@ -14,7 +15,11 @@ const SideOrder = () => {
                 <span>#123</span>
             </div>
             <div className={styles.sideOrder_container_orders}>
-                
+                <OrderContainer/>
+                <OrderContainer/>
+                <OrderContainer/>
+                <OrderContainer/>
+
             </div>
             <div className={styles.sideOrder_container_payment}>
                 <span className={styles.sideOrder_container_payment_title}>Payment Summary</span>
