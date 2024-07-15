@@ -1,0 +1,23 @@
+.box{
+    width:7% ;
+    background-color: #F5F5F5;
+    height: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 15px;
+    padding: .6% 4.5%;
+    cursor: pointer;
+    
+
+}
+.box span{
+    font-size: 15px;
+    color: #000000;
+
+}
+.box:hover{
+    background-color: #d3d3d3;
+
+}

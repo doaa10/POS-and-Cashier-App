@@ -1,0 +1,19 @@
+.menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: relative;
+
+  
+}
+.menu_container{
+    width: 100%;
+    display: flex;
+}
+.menu_container_leftMenu{
+    flex: 3;
+}
+.menu_container_rightOrder{
+    flex: 1;
+}
