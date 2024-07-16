@@ -8,32 +8,26 @@
     border: 1px solid transparent;
     color: var(--txt-color);
     align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
 
 }
 .secondary{
-    background-color: none;
-    color: #ffff;
-    border: 1px solid #ffff;
-    border-radius: 16px;
+    background-color: transparent;
+    color: var(--txt-color2);
+    border: 1px solid var(--container-color);
+    border-radius: 12px;
+    font-size: 16px;
 }
 .popular {
     background-color: var(--main-color);
-    color: var(--txt-color);
-    border-radius: 15px;
+    color: var(--bc-color);
+    border-radius: 12px;
     font-size: 16px;
 }
 
-.primary {
-    background-color: navy;
-}
-
-.danger {
-    background-color: red;
-}
-
-.success {
-    background-color: green;
-}
 
 .small {
     padding: 7px 2rem;
@@ -44,7 +38,10 @@
 }
 
 .meduim {
-    padding: 14px 24px;
+    padding: 14px 3rem;
+}
+.meduim2{
+    padding: 14px 2rem;
 }
 
 .large {
