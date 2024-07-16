@@ -2,14 +2,18 @@ import React from 'react'
 import styles from './LargeContainer.module.css'
 import Button from '../Button/Button'
 import Image from 'next/image'
+
 interface DataProps {
     id:number;
     image:string
     title: string,
     size:string,
-    price:string
+    price:number
+    onItemClick: (id: number) => void;
 }
-const LargeContainer: React.FC<DataProps> = ({id,image,title,size,price}) => {
+
+const LargeContainer: React.FC<DataProps> = ({ id, image, title, size, price, onItemClick }) => {
+
   return (
     <div className={styles.LargeContainer}>
         <div className={styles.LargeContainer__content}>
@@ -21,10 +25,10 @@ const LargeContainer: React.FC<DataProps> = ({id,image,title,size,price}) => {
             </div>
             <div className={styles.LargeContainer__content_details}>
                 <span>{size}</span>
-                <span>{price}</span>
+                <span>{price}$</span>
             </div>
             <div className={styles.LargeContainer__content_button}>
-                <Button type='popular' size='small' children='Order'/>
+                <Button type='popular' size='small' children='Order' onClick={() => onItemClick(id)}/>
             </div>
         </div>
     </div>

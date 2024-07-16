@@ -6,7 +6,11 @@ import { BsQrCodeScan } from "react-icons/bs";
 import Button from '@/Components/Small/Button/Button';
 import OrderContainer from '@/Components/Small/OrderContainer/OrderContainer';
 
-const SideOrder = () => {
+interface SideOrderProps {
+    selectedItemIds: number[];
+  }
+  
+  const SideOrder: React.FC<SideOrderProps> = ({ selectedItemIds }) => {
   return (
     <div className={styles.sideOrder}>
         <div className={styles.sideOrder_container}>
@@ -15,10 +19,9 @@ const SideOrder = () => {
                 <span>#123</span>
             </div>
             <div className={styles.sideOrder_container_orders}>
-                <OrderContainer/>
-                <OrderContainer/>
-                <OrderContainer/>
-                <OrderContainer/>
+            {selectedItemIds.map((id) => (
+            <OrderContainer key={id} id={id} />
+          ))}
 
             </div>
             <div className={styles.sideOrder_container_payment}>

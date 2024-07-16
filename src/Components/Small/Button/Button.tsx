@@ -1,19 +1,21 @@
-import React from 'react'
-import styles from './Button.module.css'
-interface types {
-    size: string,
-    type: string,// [primary, success, danger]
-    children: React.ReactNode
-}
-function Button(props: types) {
-    const { size, type, children } = props;
-    const typeClass = type === 'popular' ? styles.popular : styles[type];
+import React from 'react';
+import styles from './Button.module.css';
 
-    return (
-        <button className={`${styles.button} ${typeClass} ${styles[size]}`}>
-            {children}
-        </button>
-    );
+interface ButtonProps {
+  size: string;
+  type: string; // [primary, success, danger]
+  children: React.ReactNode;
+  onClick?: () => void;
 }
 
-export default Button
+const Button: React.FC<ButtonProps> = ({ size, type, children, onClick }) => {
+  const typeClass = type === 'popular' ? styles.popular : styles[type];
+
+  return (
+    <button className={`${styles.button} ${typeClass} ${styles[size]}`} onClick={onClick}>
+      {children}
+    </button>
+  );
+}
+
+export default Button;
