@@ -1,0 +1,15 @@
+
+.superAppHeader {
+    background-color: var(--main-color)  !important; 
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 800;
+ 
+
+  }
+  
+ 
+  .customCheckbox {
+    color: var(--s-color) !important;
+  }

@@ -27,7 +27,12 @@
     border-radius: 12px;
     font-size: 16px;
 }
-
+.popular2 {
+    background-color: var(--s-color);
+    color: var(--bc-color);
+    border-radius: 12px;
+    font-size: 16px;
+}
 
 .small {
     padding: 7px 2rem;

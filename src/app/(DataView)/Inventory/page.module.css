@@ -10,7 +10,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 50px;
 }
 .inventory_container_header{
     width: 100%;
