@@ -1,3 +1,20 @@
 .addForm{
-    margin: 50PX;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
+
+.preview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .image {
+    margin-right: 10px;
+  }
+  .image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
