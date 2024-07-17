@@ -24,4 +24,4 @@ const ImageUpload = ({ onDrop }) => {
   );
 };
 
-export default ImageDropzone;
+export default ImageUpload;
