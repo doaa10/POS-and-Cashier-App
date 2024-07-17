@@ -5,6 +5,7 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import styles from './DataTable.module.css'
 import { FaEdit } from "react-icons/fa";
 import { RiDeleteBin5Fill } from "react-icons/ri";
+import Link from 'next/link';
 
 const columns: GridColDef<(typeof rows)[number]>[] = [
   { field: 'id', headerName: 'ID', width: 90 },
@@ -65,19 +66,24 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     width: 135,
     renderCell: (params) => (
       <div className={styles.actions}>
-        <button>
-          <FaEdit size={20}
-            color='#C8161D'
-            style={{ cursor: 'pointer', marginRight: 10 }}
-          />
-        </button>
+       <div>
+        <Link href={`/Update/${params.id}`}>
+            <FaEdit size={20}
+              color='#C8161D'
+              style={{ cursor: 'pointer', marginRight: 10 }}
+
+            />
+          </Link>
+       </div>
        
-       <button>
-        <RiDeleteBin5Fill  size={20} 
-            color='#C8161D'
-            style={{ cursor: 'pointer' }}
-        />
-       </button>
+     <div>
+        <button>
+            <RiDeleteBin5Fill  size={20} 
+                color='#C8161D'
+                style={{ cursor: 'pointer' }}
+            />
+          </button>
+     </div>
         
       </div>
     ),

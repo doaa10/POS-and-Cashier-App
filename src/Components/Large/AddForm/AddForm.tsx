@@ -9,8 +9,10 @@ import FormInputs from '@/Components/Small/FormInputs/FormInputs';
 interface FileWithPreview extends File {
   preview: string;
 }
-
-const AddForm: React.FC = () => {
+interface Props{
+  name:string;
+}
+const AddForm: React.FC<Props> = ({name}) => {
   const [files, setFiles] = useState<FileWithPreview[]>([]);
 
   const handleDrop = (acceptedFiles: File[]) => {
@@ -24,7 +26,7 @@ const AddForm: React.FC = () => {
 
   return (
     <div className={styles.addForm}>
-     <div className={styles.addForm_header}><span>Add Product</span></div>
+     <div className={styles.addForm_header}><span>{name} Product</span></div>
       <div className={styles.addForm_container}>
         <div className={styles.addForm_container_imageUpload}>
           <ImageUpload onDrop={handleDrop} />
@@ -41,7 +43,7 @@ const AddForm: React.FC = () => {
             <FormInputs/>
         </div>
         <div className={styles.addForm_container_button}>
-          <Button type='popular2' size='large' children='Add' />
+          <Button type='popular2' size='large' children={name} />
         </div>
       </div>
      

@@ -6,7 +6,7 @@ const Product = () => {
   return (
     <div className={styles.addProduct}>
         <div className={styles.addProduct_container}>
-              <AddForm/>
+              <AddForm name='Add'/>
 
         </div>
     </div>
