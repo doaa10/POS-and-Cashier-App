@@ -4,6 +4,7 @@ import styles from './AddForm.module.css';
 import Button from '@/Components/Small/Button/Button';
 import Input from '@/Components/Small/Inputs/Input';
 import ImageUpload from '../ImageUpload/ImageUpload';
+import FormInputs from '@/Components/Small/FormInputs/FormInputs';
 
 interface FileWithPreview extends File {
   preview: string;
@@ -23,6 +24,7 @@ const AddForm: React.FC = () => {
 
   return (
     <div className={styles.addForm}>
+     <div className={styles.addForm_header}><span>Add Product</span></div>
       <div className={styles.addForm_container}>
         <div className={styles.addForm_container_imageUpload}>
           <ImageUpload onDrop={handleDrop} />
@@ -30,15 +32,16 @@ const AddForm: React.FC = () => {
             {files.map(file => (
               <div key={file.name} className={styles.image}>
                 <img src={file.preview} alt={file.name} />
+                <span>{file.name}</span>
               </div>
             ))}
           </div>
         </div>
         <div className={styles.addForm_container_inputs}>
-          <Input placeholder='Beef Burger' size='meduim' label='Product Name' />
+            <FormInputs/>
         </div>
         <div className={styles.addForm_container_button}>
-          <Button type='popular2' size='medium' children='Add Product' />
+          <Button type='popular2' size='large' children='Add' />
         </div>
       </div>
      

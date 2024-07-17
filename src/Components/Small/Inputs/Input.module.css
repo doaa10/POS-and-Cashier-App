@@ -17,7 +17,7 @@
 
 .inputContainer label {
     color: var(--txt-color);
-    font-size: var(--main-txt);
+    font-size: var(--avg-txt);
     font-weight: 600;
 }
 
@@ -26,6 +26,8 @@
     border: none;
     border-bottom: 1px solid var(--line-color);
     padding: 7px 10px 10px 0px;
+    font-size: var(--small2-txt);
+    color: var(--container-color);
 }
 
 .meduim {

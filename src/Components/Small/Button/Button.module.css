@@ -49,20 +49,28 @@
     padding: 14px 2rem;
 }
 
-.large {
+.large{
+    padding: 15px 13rem;
+}
+.xlarge {
     padding: 15px 25rem;
 }
 
 .small:hover {
     padding: 8px 3rem;
 }
-/* 
+
 .mediam:hover {
-    padding: 10px 7.5rem;
-} */
+    padding: 10px 8rem;
+}
+
+.xlarge:hover {
+    padding: 15px 28rem;
+}
+
 
 .large:hover {
-    padding: 15px 28rem;
+    padding: 15px 15rem;
 }
 
 .full {

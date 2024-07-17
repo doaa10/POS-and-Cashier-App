@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Input.module.css';
 
 interface inputTypes {
-    placeholder: string;
+    placeholder?: string;
     label?: string;
     size: 'meduim' | 'large';
     search?: string;
