@@ -13,3 +13,22 @@
   .customCheckbox {
     color: var(--s-color) !important;
   }
+
+  .actions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .actions button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+}
+  .actions button:hover{
+    opacity: .8;
+  }

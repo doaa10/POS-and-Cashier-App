@@ -18,6 +18,7 @@ const Menu: React.FC = () => {
         <div className={styles.menu_container_leftMenu}>
           <div className={styles.menu_container_leftMenu_categories}>
             <Categories />
+
           </div>
           <div className={styles.menu_container_leftMenu_items}>
             <MenuGrid onItemSelect={handleItemClick} />
