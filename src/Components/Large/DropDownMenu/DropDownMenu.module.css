@@ -1,0 +1,15 @@
+.buttoncolor{
+    background-color: var(--sec-txt-color);
+    color: var(--s-color);
+    font-size: var( --small2-txt);
+    font-weight: 800;
+    border-radius: 10px;
+}
+.buttoncolor:active{
+    background-color: var(--sec-txt-color);
+
+}
+.buttoncolor:hover{
+    background-color: var(--sec-txt-color);
+
+}
